@@ -1,0 +1,8 @@
+RainDigit 360 Tour - installation
+
+1. Upload every file and folder from this archive to one public directory.
+2. Open that directory URL to verify the tour.
+3. Embed it on another page with:
+<iframe src="https://example.com/tour/" title="360 virtual tour" allow="fullscreen" allowfullscreen loading="lazy" style="width:100%;aspect-ratio:16/9;border:0"></iframe>
+
+Keep the archive structure unchanged. The exported package contains no editor or local draft data.

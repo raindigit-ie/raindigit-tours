@@ -1,0 +1,8 @@
+.DS_Store
+.artifacts/
+dist/
+node_modules/
+originals/
+workspaces/
+qa/
+*.zip
