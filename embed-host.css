@@ -1,0 +1,9 @@
+.tour-fullscreen { overflow: hidden; }
+.tour-fullscreen iframe {
+  position: fixed;
+  inset: 0;
+  width: 100dvw;
+  height: 100dvh;
+  min-height: 0;
+  z-index: 10;
+}
