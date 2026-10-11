@@ -3,7 +3,7 @@
 Public preview repository for immutable, self-contained tour exports. It is not
 the source of the Studio editor or the RainDigit website.
 
-The `packages/<slug>/<packageVersion>/` directories contain complete static
+The `tours/<slug>/<packageVersion>/` directories contain complete static
 packages. Each `release-manifest.json` records the file inventory, SHA-256
 digests, Studio/runtime/format versions, and tour identity. Do not edit a
 versioned directory in place; a changed export gets a new package version.
@@ -28,8 +28,12 @@ Preview hub: https://raindigit-ie.github.io/raindigit-tours/
 
 Pages serves `main` from the repository root with `.nojekyll`. Existing package
 files are unchanged. Use the complete package URL under
-`/raindigit-tours/packages/<slug>/<packageVersion>/index.html` for an iframe;
+`/raindigit-tours/tours/<slug>/<packageVersion>/index.html` for an iframe;
 all runtime and media references are package-local relative paths.
+
+The exported package directory is published under `tours/` so the existing
+ready-message protocol reports the correct tour slug. Moving the directory
+does not modify any package bytes or manifest identity.
 
 Each `embed-*.html` page displays the same exact package in an iframe. For a
 customer website, grant `allow="fullscreen"` and `allowfullscreen` on the iframe.
